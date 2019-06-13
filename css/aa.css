@@ -1,0 +1,163 @@
+@charset "UTF-8";
+.box, .footer {
+  background: blue;
+}
+
+.box li, .footer li {
+  width: 300px;
+}
+
+.box > .son, .footer > .son {
+  width: 300px;
+}
+
+.box > .son a, .footer > .son a {
+  color: blue;
+}
+
+.box > .son a div p, .footer > .son a div p {
+  color: #00C1DE;
+}
+
+.box + div, .footer + div {
+  border-radius: 50%;
+}
+
+.box ~ p, .footer ~ p {
+  color: blue;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+}
+
+.container-float {
+  width: 100%;
+}
+
+.button {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: #00C1DE;
+  padding: 6px 12px;
+}
+
+.button-success {
+  background: #2dde59;
+}
+
+.button-success-son {
+  color: blue;
+}
+
+.button-warning {
+  background: red;
+}
+
+.box, .footer {
+  width: 300px;
+  height: 300px;
+}
+
+.box a, .footer a {
+  color: blue;
+}
+
+.footer {
+  background: #2dde59;
+  color: blue;
+}
+
+p {
+  font: initial bold 20px/20px 微软雅黑;
+}
+
+.col-1 {
+  width: 8.33333;
+}
+
+.col-2 {
+  width: 16.66667;
+}
+
+.col-3 {
+  width: 25;
+}
+
+.col-4 {
+  width: 33.33333;
+}
+
+.col-5 {
+  width: 41.66667;
+}
+
+.col-6 {
+  width: 50;
+}
+
+.col-7 {
+  width: 58.33333;
+}
+
+.col-8 {
+  width: 66.66667;
+}
+
+.col-9 {
+  width: 75;
+}
+
+.col-10 {
+  width: 83.33333;
+}
+
+.col-11 {
+  width: 91.66667;
+}
+
+.li {
+  background: url("../image/l1.jpg");
+}
+
+.l1 {
+  color: #2dde59;
+  background: url("../image/l1.jpg");
+}
+
+.l2 {
+  color: #2dde59;
+  background: url("../image/l2.jpg");
+}
+
+.l3 {
+  color: #2dde59;
+  background: url("../image/l3.jpg");
+}
+
+.l4 {
+  color: #2dde59;
+  background: url("../image/l4.jpg");
+}
+
+.l5 {
+  color: #2dde59;
+  background: url("../image/l5.jpg");
+}
+
+.l6 {
+  color: #2dde59;
+  background: url("../image/l6.jpg");
+}
+
+.l7 {
+  color: #2dde59;
+  background: url("../image/l7.jpg");
+}
+
+.l8 {
+  color: #2dde59;
+  background: url("../image/l8.jpg");
+}

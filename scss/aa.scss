@@ -1,0 +1,99 @@
+$theme:orange;
+$width:200px;
+
+@import 'var.scss';
+
+.box{
+  background: $theme;
+  li{
+    width: $width;
+  }
+  >.son{
+    width: $width;
+    a{
+      color: $theme;
+      div{
+        p{
+          color: #00C1DE;
+        }
+      }
+    }
+  }
+  +div{
+    border-radius: 50%;
+  }
+  ~p{
+    color: $theme;
+  }
+}
+
+.container{
+  width: $width;
+  height:$width ;
+  &-float{
+    width: 100%;
+  }
+}
+
+.button{
+  border:none;
+  outline: none;
+  border-radius: 50%;
+  background: #00C1DE;
+  padding: 6px 12px;
+  &-success{
+    background: #2dde59;
+    &-son{
+      color: $theme;
+    }
+  }
+  &-warning{
+    background: red;
+  }
+}
+
+.box{
+  width: $width;
+  height: $width;
+  a{
+    color: $theme;
+  }
+}
+
+.footer{
+  background: #2dde59;
+  color: $theme;
+  @extend .box;
+}
+
+p{
+  font:initial bold 20px/20px 微软雅黑;
+}
+
+//p{
+//  @if $color == red{
+//    color: red;
+//  }@else if $color == green{
+//    color: green;
+//  }
+//}
+
+@for $i from 1 to 12{
+  .col-#{$i}{
+    width: $i/12% *100%;
+  }
+}
+
+$bg :l1 l2 l3 l4 l5 l6 l7 l8;
+
+
+.li{
+  background: url("../image/l1.jpg");
+}
+
+@each $i in $bg{
+  .#{$i}{
+    color: #2dde59;
+    background: url("../image/#{$i}.jpg");
+  }
+}

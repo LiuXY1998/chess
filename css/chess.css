@@ -1,0 +1,215 @@
+.box {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.chess {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  position: relative;
+  z-index: 99;
+}
+
+.black {
+  background: black;
+}
+
+.white {
+  background: #e3e3e3;
+}
+
+.heng {
+  width: 560px;
+  height: 1px;
+  background: #00C1DE;
+  position: absolute;
+  left: 20px;
+  transform: translate3d(-300%, 0, 0);
+  animation: through 1s 1 ease-in forwards;
+}
+
+.shu {
+  height: 560px;
+  width: 1px;
+  background: #00C1DE;
+  position: absolute;
+  top: 20px;
+  transform: translate3d(0, -300%, 0);
+  animation: through 1s 1 ease-in forwards;
+}
+
+.heng:nth-of-type(1) {
+  top: 20px;
+  animation: through 50ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(1) {
+  left: 20px;
+  animation: down 50ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(2) {
+  top: 60px;
+  animation: through 100ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(2) {
+  left: 60px;
+  animation: down 100ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(3) {
+  top: 100px;
+  animation: through 150ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(3) {
+  left: 100px;
+  animation: down 150ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(4) {
+  top: 140px;
+  animation: through 200ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(4) {
+  left: 140px;
+  animation: down 200ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(5) {
+  top: 180px;
+  animation: through 250ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(5) {
+  left: 180px;
+  animation: down 250ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(6) {
+  top: 220px;
+  animation: through 300ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(6) {
+  left: 220px;
+  animation: down 300ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(7) {
+  top: 260px;
+  animation: through 350ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(7) {
+  left: 260px;
+  animation: down 350ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(8) {
+  top: 300px;
+  animation: through 400ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(8) {
+  left: 300px;
+  animation: down 400ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(9) {
+  top: 340px;
+  animation: through 450ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(9) {
+  left: 340px;
+  animation: down 450ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(10) {
+  top: 380px;
+  animation: through 500ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(10) {
+  left: 380px;
+  animation: down 500ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(11) {
+  top: 420px;
+  animation: through 550ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(11) {
+  left: 420px;
+  animation: down 550ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(12) {
+  top: 460px;
+  animation: through 600ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(12) {
+  left: 460px;
+  animation: down 600ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(13) {
+  top: 500px;
+  animation: through 650ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(13) {
+  left: 500px;
+  animation: down 650ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(14) {
+  top: 540px;
+  animation: through 700ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(14) {
+  left: 540px;
+  animation: down 700ms 1 ease-in forwards;
+}
+
+.heng:nth-of-type(15) {
+  top: 580px;
+  animation: through 750ms 1 ease-in forwards;
+}
+
+.shu:nth-of-type(15) {
+  left: 580px;
+  animation: down 750ms 1 ease-in forwards;
+}
+
+@keyframes down {
+  from {
+    transform: translate3d(0, -300%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes through {
+  from {
+    transform: translate3d(-300%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
