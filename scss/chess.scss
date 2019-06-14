@@ -5,7 +5,7 @@
   width: $w;
   height: $w;
   @include center;
-  //background: #2dde59;
+  background: #C8C8A9;
 }
 
 .chess{
@@ -26,7 +26,7 @@
 .heng{
   width: $w - $r * 2;
   height: 1px;
-  background: #00C1DE;
+  background: #e3e3e3;
   position: absolute;
   left: $r;
   transform: translate3d(-300%,0,0);
@@ -35,7 +35,7 @@
 .shu{
   height: $w -$r * 2;
   width: 1px;
-  background: #00C1DE;
+  background: #e3e3e3;
   position: absolute;
   top: $r;
   transform: translate3d(0,-300%,0);
@@ -46,11 +46,11 @@
 @for $i from 1 through 15{
   .heng:nth-of-type(#{$i}){
     top: (2*$i - 1 )*$r;
-    animation: through $i*50ms 1 ease-in forwards;
+    animation: through $i*100ms 1 ease-in forwards;
   }
   .shu:nth-of-type(#{$i}){
     left: (2*$i - 1 )*$r;
-    animation: down $i*50ms 1 ease-in forwards;
+    animation: down $i*100ms 1 ease-in forwards;
   }
 }
 //@for $i from 1 through 15 {
