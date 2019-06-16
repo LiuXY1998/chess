@@ -26,7 +26,7 @@ $(function () {
             $(this).addClass('black');
             flag=0;
             if ( isSuccess(black,coords)>=5){
-                alert('你赢了');
+                alert('黑胜');
                 box.off('click','.chess');
             }
         }else{
@@ -43,7 +43,7 @@ $(function () {
             delete blank[pos];
             $('#'+pos).addClass('white');
             if ( isSuccess(white,pos)>=5){
-                alert('弱智电脑胜');
+                alert('白胜');
                 box.off('click','.chess');
             }
 
